@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <style>
+        img{ width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;}
+    </style>
+
+    <meta charset="UTF-8">
+    <title>Wind-Speed</title>
+
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+     <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+</head>
+
+<body>
+  <div id="first_line_color">
+    <div class="row">   
+            <div class="col-md-6">    
+
+                    <div class="first_line" >
+                      <div class="div1"><h1>
+        <figure class="figure">
+          <a href="index.html"><img src="assets/images/logo.png" alt="logo" style="width:100%;height:100%;"></a>
+      </figure>
+                      </h1> </div>
+
+                    </div>    
+            </div>  
+                
+               <div class="col-md-2">     
+                        <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" style="width:80%;height:100%; margin-top: 50px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plot
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="Temperature.html">Max Temperature</a>
+                            <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="wind-speed.html">Wind-speed</a>
+                            <a class="dropdown-item" href="index.html">Home</a>
+                        </div>
+                        </div>
+                </div>  
+
+                <div class="col-md-2">  
+                    <form>
+                       <input class="MyButton1" type="button" value="Comparison" style="width:80%;height:100%; margin-top: 50px" onclick="window.location.href='comparison.html'" />       
+                    </form>
+                </div> 
+
+                <div class="col-md-2">
+                      <form>
+                            <input class="MyButton2" type="button" value="Data" style="width:80%;height:100%; margin-top: 50px" onclick="window.location.href='weather_df.html'" />       
+                      </form>
+                </div>
+        </div>
+     </div>
+<br>
+
+<header>
+    <h1>Comparison: Latitude vs. X</h1>
+</header>
+
+<br>
+<h2 style="position:absolute;left:20%;color:#02055A">vs. Wind-speed</h2>
+<br>
+<div class="Col_container">
+    <div class="row">
+        
+      
+      <div class="col-md-8">
+
+            <figure class="figure">
+                <img src="assets/images/latitude_Wind-Speed.png" alt="latitude_Wind-Speed" style="width:100%;height:100%;align:middle">
+                <br>
+                <br>
+                <figcaption>
+                  <br>
+                  Wind speed appears to be consisten between 0 to 15 range slightly more concetrated around lattitude 40 to 60 range
+                  <br><br>
+                  Zonal winds are winds circulating at the same latitude, parallel to the equator, thermalizing the atmosphere longitudinally. They are mostly constrained from cloud tracking measurements (Porco et al., 2005), doppler shifts in the emission lines of atmospheric constituents like ethane (Kostiuk et al., 2001) and the Huygens Doppler Wind Experiment (DWE) (Bird et al., 2005). In the troposphere, wind speeds primarily eastward range from < 1 m s− 1 at the surface, increasing to ~ 40 m s− 1 near 60 km where they begin decreasing until they reach a sharp minimum (~ 5 m s− 1) around 70–80 km before increasing again in the middle atmosphere. This almost zero-wind layer decouples the tropospheric and stratospheric global dynamics. A stratospheric jet with wind speeds reaching 190 m s− 1 at 50°N near 0.1 mbar (or 0.01 MPa; approximately 300 km altitude) was observed during the northern winter. A much lower wind speed on the order of 90 m s− 1, reaching lower latitudes (< 40°S in 2009), was observed in the southern hemisphere. The strong zonal winds in the northern hemisphere result from the significant thermal gradient between the north winter pole and the equatorial region. Titan is therefore one of two bodies in the solar system, along with Venus, to possess an atmosphere in global superrotation. It has been recently discovered from ALMA observations that the superrotation extends up to at least 1000 km with surprisingly high wind speeds up to 350 m s− 1.
+                </figcaption>  
+            </figure>
+    
+
+      </div>
+      
+      <div class="col-md-4">
+          
+        <main class="container2">
+          <header>
+              <h2>Visualizations</h2>
+          </header>
+          <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-6">
+                <figure id="main1_figure">
+                  <a href="./Temperature.html">
+                    <img src="assets/images/latitude_Max-Temperature.png" alt="latitude_Max-Temperature" style="width:200px;height:200px;">
+                  </a>
+                  </figure>
+      
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-6">
+                <figure id="main1_figure">
+                    <a href="./cloudiness.html">
+                    <img   src="assets/images/latitude_Cloudiness.png" alt="latitude_Cloudiness" style="width:200px;height:200px;">
+                    </a>
+                  </figure>
+            </div>
+
+              <div class="col-xs-3 col-sm-3 col-md-6">
+                  <figure id="main1_figure">
+                      <a href="./Humidity.html">
+                      <img   src="assets/images/latitude_Humidity.png" alt="latitude_Humidity" style="width:200px;height:200px;">
+                      </a>  
+                  </figure>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-6">
+                  <figure id="main1_figure">
+                      <a href="./Wind-Speed.html">
+                      <img  src="assets/images/latitude_Wind-Speed.png" alt="latitude_Wind-Speed" style="width:200px;height:200px;">
+                      </a>  
+                  </figure>
+              </div>
+            </div>
+            </main>
+       
+      </div>
+    </div>
+
+        <br><br>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+        </body>
+        
+        </html>
